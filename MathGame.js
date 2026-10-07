@@ -150,14 +150,14 @@ function main() {
         }
         function multiplication() {
             nums[0] = Math.floor(Math.random() * 10);
-            if (difficulty > 3) nums[0] = Math.floor(Math.random() * 10);
+            if (difficulty < 3) nums[0] = Math.floor(Math.random() * 10);
             else nums[1] = Math.floor(Math.random() * 100);
             nums[2] = nums[0] * nums[1];
             nums[3] = "*";
         }
         function division() {
             nums[0] = Math.floor(Math.random() * 10);
-            if (difficulty > 3) {
+            if (difficulty < 3) {
                 nums[0] = Math.floor(Math.random() * 10);
                 let divisors = [];
                 for (let i = 1; i < 10; i++) {
